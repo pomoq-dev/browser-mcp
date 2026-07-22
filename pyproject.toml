@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "browser-mcp-nextgen"
-version = "1.0.0"
+version = "1.0.1"
 description = "BrowserMCP NextGen — AI browser employee MCP server (vision/SOM, code exec, macros, watchdogs) with Chrome extension bridge"
 readme = "README.md"
 requires-python = ">=3.10"
@@ -50,10 +50,10 @@ dev = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/pomoq-dev/browser-mcp-nextgen"
-Repository = "https://github.com/pomoq-dev/browser-mcp-nextgen"
-Issues = "https://github.com/pomoq-dev/browser-mcp-nextgen/issues"
-Documentation = "https://github.com/pomoq-dev/browser-mcp-nextgen#readme"
+Homepage = "https://github.com/pomoq-dev/browser-mcp"
+Repository = "https://github.com/pomoq-dev/browser-mcp"
+Issues = "https://github.com/pomoq-dev/browser-mcp/issues"
+Documentation = "https://github.com/pomoq-dev/browser-mcp#readme"
 
 [project.scripts]
 browser-mcp-nextgen = "browser_mcp_nextgen.__main__:main"
