@@ -2,6 +2,7 @@
   "name": "@browser-mcp/extension",
   "version": "1.0.0",
   "private": true,
+  "description": "Chrome MV3 extension — WebSocket bridge, Set-of-Mark vision, human-like input, macros, watchdogs",
   "type": "module",
   "scripts": {
     "build": "tsx scripts/build.ts",

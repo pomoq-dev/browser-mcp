@@ -1,12 +1,16 @@
 {
-  "name": "@browser-mcp/server",
+  "name": "@browser-mcp/mcp",
   "version": "1.0.0",
   "private": true,
+  "description": "TypeScript MCP server that drives the real Chrome browser via the Browser MCP extension",
   "type": "module",
   "bin": {
-    "browser-mcp-nextgen": "./dist/index.js"
+    "mcp-server-browser-mcp": "./dist/index.js"
   },
   "main": "./dist/index.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "tsup src/index.ts --format esm --dts --clean && node -e \"require('fs').chmodSync('dist/index.js',0o755)\"",
     "dev": "tsx watch src/index.ts",

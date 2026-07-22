@@ -1,13 +1,10 @@
 {
   "mcpServers": {
-    "browser-mcp-nextgen": {
+    "browser-mcp": {
       "command": "node",
       "args": [
-        "/ABSOLUTE/PATH/TO/browser-mcp-ext/packages/server/dist/index.js"
-      ],
-      "env": {
-        "BROWSER_MCP_CDP_ENDPOINT": "http://127.0.0.1:9222"
-      }
+        "/ABSOLUTE/PATH/TO/browser-mcp/packages/mcp/dist/index.js"
+      ]
     }
   }
 }

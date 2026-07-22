@@ -8,21 +8,12 @@ build/
 .env.*
 coverage/
 .vite/
-*.map
-macros/
-watchdogs/
 tmp/
 .playwright/
 test-results/
-packages/server/data/
+packages/mcp/data/
 *.pdf
 *.sqlite
 .idea/
 .vscode/
 !packages/extension/icons/
-
-# Python
-__pycache__/
-*.egg-info/
-.venv/
-.pytest_cache/

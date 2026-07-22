@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "BrowserMCP NextGen",
+  "name": "Browser MCP",
   "version": "1.0.0",
-  "description": "AI browser employee — vision (Set-of-Mark), code execution, macros, watchdogs. Connects to the local BrowserMCP MCP server.",
+  "description": "Connect AI agents to your real Chrome via a local TypeScript MCP server. Vision (Set-of-Mark), code execution, macros, watchdogs.",
   "permissions": [
     "tabs",
     "activeTab",

@@ -1,10 +1,10 @@
 #!/usr/bin/env node
 /**
- * BrowserMCP NextGen — MCP Server entrypoint
+ * Browser MCP — TypeScript MCP server entrypoint
  *
- * Starts:
- *  1. WebSocket bridge for the Chrome extension
- *  2. MCP stdio server exposing the full tool catalog
+ * Architecture (same as BrowserMCP/mcp):
+ *  1. WebSocket hub — Chrome extension connects here
+ *  2. MCP stdio — AI client (Cursor/Claude/…) talks tools here
  */
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
@@ -19,8 +19,8 @@ import { registerAllTools } from "./tools/register-tools.js";
 const program = new Command();
 
 program
-  .name("browser-mcp-nextgen")
-  .description("BrowserMCP NextGen MCP server + extension bridge")
+  .name("mcp-server-browser-mcp")
+  .description("Browser MCP server (TypeScript) + Chrome extension WebSocket bridge")
   .option(
     "--ws-port <port>",
     "WebSocket port for Chrome extension",
@@ -72,7 +72,7 @@ program
     });
 
     const server = new McpServer({
-      name: "browser-mcp-nextgen",
+      name: "browser-mcp",
       version: "1.0.0",
     });
 
