@@ -20,3 +20,9 @@ packages/server/data/
 .idea/
 .vscode/
 !packages/extension/icons/
+
+# Python
+__pycache__/
+*.egg-info/
+.venv/
+.pytest_cache/

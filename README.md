@@ -1,5 +1,9 @@
 # BrowserMCP NextGen
 
+[![PyPI](https://img.shields.io/pypi/v/browser-mcp-nextgen.svg)](https://pypi.org/project/browser-mcp-nextgen/)
+[![Python](https://img.shields.io/pypi/pyversions/browser-mcp-nextgen.svg)](https://pypi.org/project/browser-mcp-nextgen/)
+
+
 Autonomous AI browser employee: **MCP server + Chrome extension** with vision (Set-of-Mark), human-like input, page/host code execution, macros, and background watchdogs.
 
 ```
@@ -42,6 +46,29 @@ packages/
 ## Quick start
 
 ### 1. Install & build
+
+### Python (PyPI) — recommended MCP server
+
+```bash
+pip install browser-mcp-nextgen
+# or: uv pip install browser-mcp-nextgen
+browser-mcp-nextgen
+```
+
+MCP client config:
+
+```json
+{
+  "mcpServers": {
+    "browser-mcp-nextgen": {
+      "command": "browser-mcp-nextgen"
+    }
+  }
+}
+```
+
+The Chrome extension still comes from this repo: load `packages/extension/dist`.
+
 
 ```bash
 cd browser-mcp-ext
