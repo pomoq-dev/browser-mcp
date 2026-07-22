@@ -1,0 +1,26 @@
+{
+  "name": "browser-mcp-nextgen",
+  "version": "1.0.0",
+  "private": true,
+  "description": "BrowserMCP NextGen — autonomous AI browser employee (MCP server + Chrome extension)",
+  "type": "module",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run build -w @browser-mcp/shared && npm run build -w @browser-mcp/server && npm run build -w @browser-mcp/extension",
+    "build:shared": "npm run build -w @browser-mcp/shared",
+    "build:server": "npm run build -w @browser-mcp/server",
+    "build:extension": "npm run build -w @browser-mcp/extension",
+    "dev:server": "npm run dev -w @browser-mcp/server",
+    "typecheck": "npm run typecheck -w @browser-mcp/shared && npm run typecheck -w @browser-mcp/server && npm run typecheck -w @browser-mcp/extension",
+    "test": "npm run test -w @browser-mcp/shared && npm run test -w @browser-mcp/server",
+    "start": "node packages/server/dist/index.js",
+    "inspector": "npx @modelcontextprotocol/inspector node packages/server/dist/index.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT",
+  "author": "BrowserMCP-NextGen"
+}

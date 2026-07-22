@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>BrowserMCP NextGen</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">⬡</div>
+      <div>
+        <h1>BrowserMCP NextGen</h1>
+        <p class="sub">AI browser employee</p>
+      </div>
+    </header>
+
+    <section class="status-card">
+      <div class="row">
+        <span>Bridge</span>
+        <span id="status-badge" class="badge off">OFF</span>
+      </div>
+      <div class="row muted">
+        <span>URL</span>
+        <span id="status-url">—</span>
+      </div>
+      <div class="row muted">
+        <span>Extension</span>
+        <span id="status-ext" class="mono">—</span>
+      </div>
+    </section>
+
+    <section class="form">
+      <label>
+        Host
+        <input id="host" type="text" value="127.0.0.1" />
+      </label>
+      <label>
+        Port
+        <input id="port" type="number" value="17373" />
+      </label>
+      <div class="actions">
+        <button id="btn-connect" class="primary">Connect</button>
+        <button id="btn-disconnect" class="ghost">Disconnect</button>
+      </div>
+    </section>
+
+    <section class="hints">
+      <p>1. Start MCP server: <code>npm start</code></p>
+      <p>2. Connect this extension</p>
+      <p>3. Point your AI client at the MCP server</p>
+    </section>
+
+    <footer>
+      <span>v1.0.0</span>
+      <a href="https://github.com" target="_blank" rel="noreferrer">Docs</a>
+    </footer>
+
+    <script type="module" src="popup.js"></script>
+  </body>
+</html>
