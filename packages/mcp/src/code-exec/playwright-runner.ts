@@ -121,7 +121,7 @@ function buildWrapper(
       : "playwright-core";
 
   return `/**
- * Auto-generated Playwright runner for BrowserMCP NextGen.
+ * Auto-generated Playwright runner for Browser MCP.
  * Available globals in user script:
  *   - page, browser, context (Playwright)
  *   - getConnectedPage() helper

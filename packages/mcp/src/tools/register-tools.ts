@@ -39,7 +39,7 @@ function tabOpts(tabId?: number) {
 }
 
 /**
- * Register the full BrowserMCP NextGen tool catalog on an MCP server.
+ * Register the full Browser MCP tool catalog on an MCP server.
  */
 export function registerAllTools(server: McpServer): void {
   // ── Status ──────────────────────────────────────────────────────────
